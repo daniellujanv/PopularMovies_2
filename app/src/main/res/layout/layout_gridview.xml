@@ -1,0 +1,50 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="24dp"
+    android:id="@+id/container"
+    >
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="0dp"
+
+        android:numColumns="auto_fit"
+        android:verticalSpacing="1dp"
+        android:horizontalSpacing="1dp"
+        android:stretchMode="columnWidth"
+
+        android:scrollingCache="true"
+        android:gravity="center"
+        android:background="@android:color/transparent"
+        android:smoothScrollbar="true"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparentBackground"
+        android:id="@+id/progressbar_wrapper"
+        android:clickable="true"
+        >
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:layout_gravity="center"
+            android:indeterminate="true"
+            />
+    </FrameLayout>
+    <TextView
+        android:id="@+id/tv_no_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/no_content"
+        android:gravity="center"
+        />
+</RelativeLayout>

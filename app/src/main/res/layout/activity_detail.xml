@@ -1,0 +1,10 @@
+<FrameLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="dlv.nanodegree.popularmovies_1.DetailActivity"
+    android:animateLayoutChanges="true"
+    tools:ignore="MergeRootFrame"
+    android:id="@+id/fragment_details_container"
+    />
